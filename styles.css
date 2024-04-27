@@ -1,0 +1,94 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff; /* Darker, richer background */
+    color: #f5f5f5; /* Light text for contrast */
+  }
+  
+  .container {
+    background-color: #333; 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2); 
+    max-width: 800px; 
+    margin: 40px auto; 
+  }
+  
+  .title {
+    font-family: 'Yeseva One', cursive;
+    text-align: center;
+    color: #fe410c; 
+    margin-bottom: 25px; 
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .label {
+    font-family: 'Yeseva One', cursive;
+    display: block;
+    margin-bottom: 5px; 
+    color: #ddd; 
+  }
+  
+  .input-field {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #444; 
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background-color: #fff; /* Match loader color */
+    color: #000; /*  Light text in input fields */
+  }
+  
+  .button {
+    background-color: #fe410c; /* Primary Color */
+    color: white;
+    padding: 15px 30px; 
+    border: none;
+    border-radius: 6px; 
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease; 
+  }
+  
+  .button:hover {
+    background-color: #000; 
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .output-content {
+    min-height: 150px;
+    background-color: #fff; 
+    border-radius: 5px;
+    padding: 15px;
+    color: #000; 
+  }
+  
+  /* Loader */
+  .loader {
+    display: none; 
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .loader.loading {
+    display: block;
+  }
+  
+  .loader::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 60%;
+    border: 10px solid #fe410c; 
+    border-top-color: transparent;
+    animation: spin 3s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
